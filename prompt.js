@@ -19,7 +19,7 @@ class tset {
         {
           opcode: 'prompt',
 
-          blockType: Scratch.BlockType.BOOLEAN,
+          blockType: Scratch.BlockType.REPORTER,
 
           text: 'prompt [A] ,  [B]?',
           arguments: {
