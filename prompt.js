@@ -37,3 +37,4 @@ class tset {
   prompt({A, B}){
     return window.prompt(A, B);
   }
+Scratch.extensions.register(new tset());
