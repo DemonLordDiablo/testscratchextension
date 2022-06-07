@@ -17,24 +17,24 @@ class tset {
 
       blocks: [
         {
-          opcode: 'prompt',
+          opcode: 'test',
 
           blockType: Scratch.BlockType.REPORTER,
 
-          text: 'prompt [A] ,  [B]?',
+          text: 'test [A] ,  [B]?',
           arguments: {
             A: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'hi'
+              defaultValue: '2'
             },
             B: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: ''
+              defaultValue: '5'
             }
           }
         },
       
-  prompt({A, B}){
-    return A + ", " + B;
+  test({A, B}){
+    return A+B;
   }
 Scratch.extensions.register(new tset());
